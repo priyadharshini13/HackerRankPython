@@ -11,9 +11,10 @@ def mutate_string(string, position, character):
     
     # Solution 1
     # mutated_string = string[:position] + character + string[position+1:]
+    # return mutated_string
     
     # Solution 2
-    # convert string to list as string is immutable, replace the character and then join the list elements
+    # convert string to list as string is immutable
     # list_string = list(string)
     # list_string[position] = character
     # mutated_string = ''.join(list_string)
