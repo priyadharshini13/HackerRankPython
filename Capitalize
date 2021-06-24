@@ -15,6 +15,7 @@ import os
 import random
 import re
 import sys
+import string
 
 # Complete the solve function below.
 def solve(s):
@@ -23,18 +24,13 @@ def solve(s):
     # return s.title()
 
     #Solution 2 - if first character is a number, then no capitalization occurs - 
-    words = list(s.split(' '))
-    return ' '.join([word.capitalize() for word in words])
+    # Explicit splitting with a ' ' preserves adjacent spaces    
+    # words = list(s.split(' '))
+    # return ' '.join([word.capitalize() for word in words])
 
-    #Solution 3 - One liner
+    #Solution 3 
     # return ' '.join(word[:1].upper()+word[1:]  for word in s.split(' '))
+
+    #Solution 4 - Solution 2 & 3 is available as capwords method of 'string' module
+    return string.capwords(s, ' ')
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    s = input()
-
-    result = solve(s)
-
-    fptr.write(result + '\n')
-
-    fptr.close()
