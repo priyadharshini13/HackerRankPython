@@ -1,0 +1,40 @@
+Output Format
+  Print the capitalized string, .
+
+Sample Input
+  chris alan
+
+Sample Output
+  Chris Alan
+Note: in a word only the first character is capitalized. Example 12abc when capitalized remains 12abc.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the solve function below.
+def solve(s):
+    
+    #Solution 1 - does not work for 12name' case
+    # return s.title()
+
+    #Solution 2 - if first character is a number, then no capitalization occurs - 
+    words = list(s.split(' '))
+    return ' '.join([word.capitalize() for word in words])
+
+    #Solution 3 - One liner
+    # return ' '.join(word[:1].upper()+word[1:]  for word in s.split(' '))
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
