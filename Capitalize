@@ -33,4 +33,10 @@ def solve(s):
 
     #Solution 4 - Solution 2 & 3 is available as capwords method of 'string' module
     return string.capwords(s, ' ')
+    
 if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    s = input()
+    result = solve(s)
+    fptr.write(result + '\n')
+    fptr.close()
