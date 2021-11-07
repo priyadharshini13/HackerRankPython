@@ -27,7 +27,6 @@
 #   Output the total number of students who have at least one subscription.
 
 # Sample Input
-
 # 9
 # 1 2 3 4 5 6 7 8 9
 # 9
