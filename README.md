@@ -9,3 +9,7 @@ as a part of my practice and they are available here in every problem's solution
 
 
 Link - https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python
+
+
+Reflection
+  http://simp.ly/p/qn5wKv
