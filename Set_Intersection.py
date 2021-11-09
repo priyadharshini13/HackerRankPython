@@ -27,3 +27,13 @@
   
 # Sample Output
   # 5
+
+# --------------
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Solution 1 - 2 lines
+# eng, french = map(set, [input().split() for i in range(4)][1::2])
+# print(len(eng.intersection(french)))
+
+# Solution 2 - one line
+print(len(input() == 0 or set(input().split()).intersection(input()== 0 or set(input().split()))))
