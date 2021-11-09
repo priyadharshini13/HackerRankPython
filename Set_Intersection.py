@@ -31,9 +31,14 @@
 # --------------
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-# Solution 1 - 2 lines
+# Solution 1 - 3 line | More readability
+# _, a = input(), set(input().split())
+# _, b = input(), set(input().split())
+# print(len(a.intersection(b)))
+
+# Solution 2 - 2 lines| Less readability
 # eng, french = map(set, [input().split() for i in range(4)][1::2])
 # print(len(eng.intersection(french)))
 
-# Solution 2 - one line
+# Solution 3 - one line| Very Less readability
 print(len(input() == 0 or set(input().split()).intersection(input()== 0 or set(input().split()))))
