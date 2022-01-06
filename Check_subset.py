@@ -38,4 +38,18 @@ for i in range(total_testcase):
     #     print('False')
     
     # Solution 2
-    print('True') if setA.issubset(setB) else print('False')
+    # print('True') if setA.issubset(setB) else print('False')
+    print(setA.issubset(setB))
+    
+    # Solution 3
+    # print(setB.intersection(setA) == setA)
+    
+    # # Solution 4
+    # print(setA < setB)
+
+    # Solution 5 - using minus
+    # print(setA - setB == set())
+    
+    # Solution 6 - using difference
+    # dif = setA.difference(setB)
+    # print('True') if len(dif)==0 else print('False')
