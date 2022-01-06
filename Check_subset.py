@@ -53,3 +53,6 @@ for i in range(total_testcase):
     # Solution 6 - using difference
     # dif = setA.difference(setB)
     # print('True') if len(dif)==0 else print('False')
+
+    # Solution 7
+    # print(not bool(setA.difference(setB)))
