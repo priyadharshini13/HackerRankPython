@@ -12,4 +12,5 @@ Link - https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsol
 
 
 Reflection
-  https://app.simplenote.com/p/jZyzZv
+<!--   https://app.simplenote.com/p/jZyzZv -->
+http://simp.ly/p/CRCPkn
